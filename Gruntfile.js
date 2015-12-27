@@ -1,6 +1,6 @@
 /* global module:false */
 module.exports = function(grunt) {
-	var port = grunt.option('port') || 8008;
+	var port = grunt.option('port') || 8000;
 	var base = grunt.option('base') || '.';
 
 	// Project configuration
@@ -148,7 +148,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-autoprefixer' );
 	grunt.loadNpmTasks( 'grunt-zip' );
-	grunt.loadNpmTasks( 'grunt-gh-pages' );
 
 	// Default task
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
