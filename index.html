@@ -19,6 +19,9 @@
 		<link rel="stylesheet" href="css/theme/solarizedcustom_newyear2016.css" id="theme">	
 		<link rel="stylesheet" href="css/theme/fontbackup.css" >
 
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -31,16 +34,15 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 			
-				<section data-transition="concave-in zoom-out" data-transition-speed="slow" data-autoslide="4000">
+				<section data-transition="concave-in zoom-out" data-transition-speed="slow" data-autoslide="8000">
 					<h1>Happy Holidays!</h1>
 					
-					<p style="line-height:0.9em;"><img src="./resources/myprofile/cannon-1052-001.jpg"
-					style="
-					float:center;clear:left;
-					-webkit-filter: drop-shadow(5px 5px 20px #d33682) hue-rotate(10deg);
-					width:300px;">
+					<span style="line-height:0.9em;float:center;clear:left;">
+					<img src="./resources/myprofile/cannon-1052-001.jpg"
+					style="width:300px;
+					-webkit-filter: drop-shadow(5px 5px 20px #d33682) hue-rotate(10deg);">
 					<br><a href="https://sites.google.com/a/tni.ac.th/kittimame/">Kittima Mekhabunchakij</a><br> / <a href="http://plus.google.com/+KittimaMe">+KittimaMe</a>
-					</p>
+					</span>
 				</section>
 				<section data-autoslide="5000" 
 				data-background="resources/myprofile/cannon-1114-small-001.jpg"
@@ -60,7 +62,7 @@
 					<blockquote class="flowerwhite;font-size:2.17em;">Have A Wonderful Year Ahead Happy New Year!!! </blockquote>
 				</section>
 
-				<section data-background="resources/myprofile/IMG_5894-001.jpg" data-transition="concave-in zoom-out" data-autoslide="2000">
+				<section data-background="resources/myprofile/IMG_5894-001.jpg" data-transition="concave-in zoom-out" data-autoslide="3000">
 				<blockquote class="flowerdarker">A new year is unfolding</blockquote>
 				</section>
 				<section data-background="resources/myprofile/IMG_5891-001.jpg" data-transition="fade-in zoom-out" data-autoslide="2000">
@@ -74,8 +76,9 @@
 				</section> <!--- end flowers --->
 
 				<section data-background="resources/myprofile/iphone-023.jpg" 	data-transition="convex-in concave-out" data-autoslide="6000">
-				<blockquote class="floweryellow">A new year is unfolding like a blossom with petals curled. <br>Tightly concealing the beauty within.</blockquote>
+				<blockquote class="flowerwhite">A new year is unfolding like a blossom with petals curled. <br>Tightly concealing the beauty within.</blockquote>
 				</section>
+
 
 			<section data-background="https://static.pexels.com/photos/670/yellow-animal-flower-pink-large.jpg"
 					data-transition="concave-in zoom-out" data-transition-speed="slow" data-autoslide="4000">
@@ -98,15 +101,25 @@
 					Thailand tourism
 					
 					<span style="line-height:0.8em;">
-						<span style="float:left;clear:left;"><img src="resources/myprofile/scholar-profile-photo.jpg"
-					style="float:left;clear:right;
-					width:180px;
-					-webkit-filter: hue-rotate(90deg) drop-shadow(5px 5px 20px #78b9e6);"></span>
+						<span style="float:left;clear:left;width:180px"><img src="resources/myprofile/cannon-1052-001.jpg"
+					style="-webkit-filter: opacity(0.9)
+ drop-shadow(5px 5px 20px #78b9e6);"></span>
 						<span style="float:right;clear:right;"><a href="http://plus.google.com/+KittimaMe">+KittimaMe</a><h6 style="font-size:36px;">MIT licensed</h6></span>
 					</span>
 					
-										
 				</section>
+			</section>
+			
+				<section data-transition="convex-in zoom-out" data-transition-speed="slow" data-autoslide="3000">
+					<h2>Credits</h2>
+					<ul>
+					<li>
+						<a href="http://lab.hakim.se/reveal-js/">Reveal.js</a> created by <a href="http://hakim.se">Hakim el Hattab</a>
+					</li>
+					<li><a href="https://git-scm.com/">Git</a> & <a href="https://github.com/">Github</a>, for <code>git push origin gh-pages</code></li>
+					</ul>
+				</section>
+			
             </section>      
 			</div> 
 
@@ -136,6 +149,7 @@
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/tagcloud/tagcloud.js', async: true },
